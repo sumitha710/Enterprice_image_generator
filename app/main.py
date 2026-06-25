@@ -7,7 +7,7 @@ from app.core.database import (
 
 from app.routers.auth import router as auth_router
 from app.routers.generate import router as generate_router
-from app.routers.assets import router as assets_router
+from app.routers.assets import router as assets_router      
 from app.routers.images import router as images_router
 
 import os
@@ -19,7 +19,6 @@ if os.getenv("RECREATE_DB", "false").lower() == "true":
 Base.metadata.create_all(
     bind=engine
 )
-
 app = FastAPI(
     title="Enterprise Branded Image Generator"
 )

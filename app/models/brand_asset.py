@@ -5,6 +5,7 @@ from sqlalchemy.orm import relationship
 from datetime import datetime
 from app.core.database import Base
 
+
 class BrandAsset(Base):
     __tablename__ = "brand_assets"
 
